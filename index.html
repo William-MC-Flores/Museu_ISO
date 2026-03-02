@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu dos Sistemas Operacionais</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="siteHeader" class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="img/ISO.png" alt="Logo Museu ISO" class="brand-img">
+        <span class="brand-title">Museu ISO</span>
+      </a>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#colecao">Coleção</a></li>
+          <li><a href="#contato" class="cta">Visite</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Logo carousel section -->
+    <section id="logos" class="section logos">
+      <div class="container">
+        <div id="logoCarousel" class="carousel" aria-label="Logos de sistemas operacionais">
+          <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide"><img src="img/android.jpg" alt="Android logo"></li>
+              <li class="carousel-slide"><img src="img/iphone_logo.png" alt="iPhone logo"></li>
+              <li class="carousel-slide"><img src="img/linux_tux.png" alt="Linux Tux logo"></li>
+              <li class="carousel-slide"><img src="img/macos.png" alt="macOS logo"></li>
+              <li class="carousel-slide"><img src="img/windows.jpg" alt="Windows logo"></li>
+            </ul>
+          </div>
+          <button class="carousel-btn next" aria-label="Próximo">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Museu dos Sistemas Operacionais</h1>
+          <p class="hero-sub">Explore a história, design e impacto de sistemas como Linux, Windows e projetos proprietários.</p>
+
+          <p class="presentation">No Museu SO você encontrará interfaces históricas, logos icônicos e uma curadoria visual que conecta tecnologia e cultura.</p>
+
+          <ul class="benefits">
+            <li>Exposições interativas</li>
+            <li>Informações técnicas e visuais</li>
+            <li>Workshops e visitas guiadas</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="#colecao" class="btn primary">Ver Coleção</a>
+            <a href="#contato" class="btn outline">Agendar Visita</a>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <img src="img/computador.jpg" alt="Exposição de sistemas operacionais" class="hero-image">
+          <figcaption class="small muted"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="featured" class="section featured">
+      <div class="container featured-inner">
+        <figure class="featured-figure">
+          <img src="img/win_tux.jpg" alt="Windows e Linux juntos" class="featured-image">
+          <figcaption class="small muted">O diálogo entre mundos: Linux (Tux) e Windows lado a lado.</figcaption>
+        </figure>
+        <div class="featured-content">
+          <h2>O propósito deste site</h2>
+          <p>O Museu SO é uma vitrine educativa e visual que documenta a evolução dos sistemas operacionais, comparando design, filosofia e recursos práticos. Nosso objetivo é oferecer contexto histórico e técnico, além de exemplos visuais que permitem entender como interfaces e paradigmas mudaram ao longo do tempo.</p>
+          <p>Use os cards abaixo para explorar cada sistema: clique para abrir uma ficha detalhada com ano, estilo visual, principais funcionalidades e curiosidades. O botão de visita permite agendar uma experiência ou receber materiais educativos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="container">
+        <h2>Sobre o Museu</h2>
+        <p>Uma jornada cronológica e visual através de interfaces, conceitos e marcos que moldaram a computação moderna.</p>
+      </div>
+    </section>
+
+    <section id="colecao" class="section collection">
+      <div class="container">
+        <h2>Coleção</h2>
+        <div class="cards">
+          <article class="card" data-system="AROS" style="--card-bg:url('img/AROS_Desktop.jpg')">
+            <img src="img/AROS.jpg" alt="AROS" class="card-img">
+            <h3>AROS</h3>
+              <p class="muted">Sistema alternativo inspirado no AmigaOS. Projetado para oferecer compatibilidade com software Amiga e uma experiência leve para recursos limitados.</p>
+          </article>
+
+          <article class="card" data-system="TempleOS" style="--card-bg:url('img/TempleOS.jpg')">
+            <img src="img/TempleOS.jpg" alt="TempleOS" class="card-img">
+            <h3>TempleOS</h3>
+            <p class="muted">Sistema criado por Terry A. Davis, experimental e único, com estética retro e propostas de linguagem/ambiente próprias (HolyC). Relevante pela singularidade histórica e educacional.</p>
+          </article>
+
+          <article class="card" data-system="Arch Linux" style="--card-bg:url('img/arch.png')">
+            <img src="img/arch.png" alt="Arch Linux" class="card-img">
+            <h3>Arch Linux</h3>
+            <p class="muted">Rolling release, minimalista e altamente customizável. Popular entre usuários avançados que preferem controle total do sistema e instalação mínima.</p>
+          </article>
+
+          <article class="card" data-system="Debian" style="--card-bg:url('img/debian.png')">
+            <img src="img/debian.png" alt="Debian" class="card-img">
+            <h3>Debian</h3>
+            <p class="muted">Estável, base de muitas distribuições populares. Conhecido por sua política de pacotes, enfoque na estabilidade e vasto repositório de software.</p>
+          </article>
+
+          <article class="card" data-system="elementary" style="--card-bg:url('img/elementary.png')">
+            <img src="img/elementary.png" alt="elementary OS" class="card-img">
+            <h3>elementary OS</h3>
+            <p class="muted">Foco em design e usabilidade, com uma interface limpa inspirada em macOS. Valoriza consistência visual e UX para usuários finais.</p>
+          </article>
+
+          <article class="card" data-system="Fedora" style="--card-bg:url('img/fedora.png')">
+            <img src="img/fedora.png" alt="Fedora" class="card-img">
+            <h3>Fedora</h3>
+            <p class="muted">Inovação e tecnologias upstream no ecossistema Linux. Frequentemente testa novas soluções que depois evoluem para outras distribuições.</p>
+          </article>
+
+          <article class="card" data-system="Kali" style="--card-bg:url('img/kali.jpg')">
+            <img src="img/kali.jpg" alt="Kali Linux" class="card-img">
+            <h3>Kali Linux</h3>
+            <p class="muted">Distribuição voltada para segurança e pentesting, com ferramentas para análise forense, testes de intrusão e auditoria de redes.</p>
+          </article>
+
+          <article class="card" data-system="Linux Mint" style="--card-bg:url('img/mint.png')">
+            <img src="img/mint.png" alt="Linux Mint" class="card-img">
+            <h3>Linux Mint</h3>
+            <p class="muted">Fácil de usar, focado em desktop e estabilidade. Ideal para migrantes do Windows que buscam uma transição suave com bom suporte de hardware.</p>
+          </article>
+
+          <article class="card" data-system="Pop!_OS" style="--card-bg:url('img/pop.jpg')">
+            <img src="img/pop.jpg" alt="Pop!_OS" class="card-img">
+            <h3>Pop!_OS</h3>
+            <p class="muted">Distribuição com foco em produtividade, otimização para hardware System76 e fluxo de trabalho moderno para desenvolvedores e criadores.</p>
+          </article>
+
+          <article class="card" data-system="Puppy" style="--card-bg:url('img/puppy.png')">
+            <img src="img/puppy.png" alt="Puppy Linux" class="card-img">
+            <h3>Puppy Linux</h3>
+            <p class="muted">Leve e rápido, ideal para máquinas antigas e para quem precisa recuperar desempenho em computadores com recursos limitados.</p>
+          </article>
+
+          <article class="card" data-system="ReactOS" style="--card-bg:url('img/reactOS.jpg')">
+            <img src="img/reactOS.jpg" alt="ReactOS" class="card-img">
+            <h3>ReactOS</h3>
+            <p class="muted">Projeto que busca reimplementar o design do Windows NT de forma open-source, tentando oferecer compatibilidade com binários e drivers Windows.</p>
+          </article>
+
+          <article class="card" data-system="Ubuntu" style="--card-bg:url('img/ubuntu.png')">
+            <img src="img/ubuntu.png" alt="Ubuntu" class="card-img">
+            <h3>Ubuntu</h3>
+            <p class="muted">Popular e amigável, com grande comunidade, ciclos regulares de lançamento e forte suporte a usuários iniciantes e profissionais.</p>
+          </article>
+
+          <article class="card" data-system="Windows 10" style="--card-bg:url('img/win10.png')">
+            <img src="img/win10.png" alt="Windows 10" class="card-img">
+            <h3>Windows 10</h3>
+            <p class="muted">Sistema amplamente usado em desktops modernos, com foco em compatibilidade de software, suporte a drivers proprietários e integração com serviços Microsoft.</p>
+          </article>
+
+          <article class="card" data-system="Windows 7" style="--card-bg:url('img/win7.jpg')">
+            <img src="img/win7.jpg" alt="Windows 7" class="card-img">
+            <h3>Windows 7</h3>
+            <p class="muted">Clássico e querido por muitos, com design centrado em produtividade e simplicidade. Ainda usado em ambientes legados e nostalgia.</p>
+          </article>
+
+          <article class="card" data-system="Windows 98" style="--card-bg:url('img/win98.png')">
+            <img src="img/win98.png" alt="Windows 98" class="card-img">
+            <h3>Windows 98</h3>
+            <p class="muted">Marco histórico nas interfaces gráficas do PC, representando a popularização das GUIs no ambiente doméstico e comercial.</p>
+          </article>
+
+          <article class="card" data-system="Windows Vista" style="--card-bg:url('img/windows_vista.jpg')">
+            <img src="img/windows_vista.jpg" alt="Windows Vista" class="card-img">
+            <h3>Windows Vista</h3>
+            <p class="muted">Introduziu efeitos visuais (Aero) e uma nova abordagem a segurança/contas no Windows, apesar de ter sido controverso à época.</p>
+          </article>
+
+          <article class="card" data-system="Windows XP" style="--card-bg:url('img/winxp.png')">
+            <img src="img/winxp.png" alt="Windows XP" class="card-img">
+            <h3>Windows XP</h3>
+            <p class="muted">Conhecido por sua longa adoção e interface marcante; marcou uma era pela combinação de estabilidade e compatibilidade de software.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Preencha o formulário para agendar sua visita ou tirar dúvidas.</p>
+
+        <form id="contactForm" class="contact-form" method="post" action="#" novalidate>
+          <div class="form-row">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome completo" required>
+            <div class="error" id="err-name" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+            <div class="error" id="err-email" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            <div class="error" id="err-message" aria-live="polite"></div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar</button>
+            <div id="formResult" class="form-result" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Museu dos Sistemas Operacionais — Exposição interativa</p>
+      <nav aria-label="Rodapé">
+        <a href="#sobre">Sobre</a> · <a href="#colecao">Coleção</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal de detalhes do sistema -->
+  <div id="systemModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content" tabindex="-1">
+      <button id="modalClose" class="modal-close" aria-label="Fechar">×</button>
+      <div class="modal-body">
+          <figure class="modal-figure">
+            <img id="modalImg" class="modal-img" src="" alt="">
+          </figure>
+        <h3 id="modalTitle"></h3>
+        <p id="modalVisual" class="muted"></p>
+        <p id="modalYear" class="muted"></p>
+        <h4>Funcionalidades / Estilo</h4>
+        <p id="modalFeatures"></p>
+      </div>
+    </div>
+  </div>
+
+  <button id="backTop" class="back-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
