@@ -341,6 +341,4 @@ document.addEventListener('DOMContentLoaded', () => {
       openModal(key, imgSrc, imgAlt);
     });
   });
-
-  // Editor removed: simplified hover-only behavior (no editor or preview)
 });
